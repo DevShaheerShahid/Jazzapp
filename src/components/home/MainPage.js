@@ -1,6 +1,5 @@
 import React from "react";
 
-import mainPic from "./mainPic.png";
 export const MainPage = () => {
   return (
     <div class="viewDiv">
@@ -11,7 +10,7 @@ export const MainPage = () => {
         <button class="btn">MORE DETAILS</button>
       </div>
       <div class="img-Banner">
-        <img src={mainPic} alt="Advertizment" />
+        <img src="mainPic.png" alt="Advertizment" />
       </div>
     </div>
   );

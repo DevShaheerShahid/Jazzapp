@@ -1,6 +1,6 @@
 import React from "react";
-import Gold from "./GOLD.png";
-import New from "./new.png";
+import { useNavigate } from "react-router-dom";
+
 export const Cards = () => {
   const data = [
     {
@@ -8,100 +8,105 @@ export const Cards = () => {
       mob_Data: "1GB",
       mints: 500,
       price: 170,
-      pic: Gold,
+      pic: "gold.png",
     },
     {
       h1: "Monthly",
       mob_Data: "10GB",
       mints: 900,
       price: 870,
-      pic: New,
+      pic: "new.png",
     },
     {
       h1: "Weekly",
       mob_Data: "1GB",
       mints: 500,
       price: 170,
-      pic: Gold,
+      pic: "gold.png",
     },
     {
       h1: "Monthly",
       mob_Data: "10GB",
       mints: 900,
       price: 870,
-      pic: New,
+      pic: "new.png",
     },
     {
       h1: "Weekly",
       mob_Data: "1GB",
       mints: 500,
       price: 170,
-      pic: Gold,
+      pic: "gold.png",
     },
     {
       h1: "Monthly",
       mob_Data: "10GB",
       mints: 900,
       price: 870,
-      pic: New,
+      pic: "new.png",
     },
     {
       h1: "Weekly",
       mob_Data: "1GB",
       mints: 500,
       price: 170,
-      pic: Gold,
+      pic: "gold.png",
     },
     {
       h1: "Monthly",
       mob_Data: "10GB",
       mints: 900,
       price: 870,
-      pic: New,
+      pic: "new.png",
     },
     {
       h1: "Weekly",
       mob_Data: "1GB",
       mints: 500,
       price: 170,
-      pic: Gold,
+      pic: "gold.png",
     },
     {
       h1: "Monthly",
       mob_Data: "10GB",
       mints: 900,
       price: 870,
-      pic: New,
+      pic: "new.png",
     },
     {
       h1: "Weekly",
       mob_Data: "1GB",
       mints: 500,
       price: 170,
-      pic: Gold,
+      pic: "gold.png",
     },
     {
       h1: "Monthly",
       mob_Data: "10GB",
       mints: 900,
       price: 870,
-      pic: New,
+      pic: "new.png",
     },
     {
       h1: "Weekly",
       mob_Data: "1GB",
       mints: 500,
       price: 170,
-      pic: Gold,
+      pic: "gold.png",
     },
     {
       h1: "Monthly",
       mob_Data: "10GB",
       mints: 900,
       price: 870,
-      pic: New,
+      pic: "new.png",
     },
   ];
+
+  const navigate = useNavigate();
+  const fun = () => {
+    navigate("/cart");
+  };
 
   return (
     <>
@@ -128,7 +133,9 @@ export const Cards = () => {
                 <h3>Rs.{Element.price}</h3>
               </div>
               <div>
-                <button class="btn-pkg">MORE DETAILS </button>
+                <button class="btn-pkg" onClick={fun}>
+                  MORE DETAILS
+                </button>
                 <br />
                 <img class="pkg-img" src={Element.pic} alt="hi" />
               </div>

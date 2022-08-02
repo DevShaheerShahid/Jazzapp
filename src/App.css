@@ -216,8 +216,15 @@ p {
   line-height: 0.875rem;
   box-shadow: none;
   letter-spacing: 0.0934rem;
-  background: #cfb53b;
+  background: red;
   list-style: none;
   padding: 18px 20px;
   border: 0;
+}
+
+.signIn {
+  margin-top: 200px;
+}
+.cart {
+  margin-top: 200px;
 }

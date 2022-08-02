@@ -1,7 +1,5 @@
 import React from "react";
-import prepaid1 from "./prePaidBtn1.png";
-import prepaid3 from "./prePaidBtn2.png";
-import prepaid2 from "./prePaidImg.png";
+
 export const Page2 = () => {
   return (
     <>
@@ -17,17 +15,17 @@ export const Page2 = () => {
       <div class="test">
         <div class="prePaid-btn ">
           <a href="." class="pre-btn">
-            <img src={prepaid1} class="image " alt="" />
+            <img src="prePaidBtn1.png" class="image " alt="" />
             <br />
             <span class="color-grey">DATA</span>{" "}
           </a>
           <a href="." class="pre-btn">
-            <img src={prepaid3} class="image " alt="" />
+            <img src="prePaidBtn2.png" class="image " alt="" />
             <br />
             <span class="color-grey">ALL IN ONE</span>
           </a>
           <a href="." class="pre-btn">
-            <img src={prepaid1} class="image " alt="" />
+            <img src="prePaidBtn1.png" class="image " alt="" />
             <br />
             <span class="color-grey">PRICE PLANS</span>
           </a>
@@ -37,7 +35,7 @@ export const Page2 = () => {
 
       <div class="row">
         <div class="col1">
-          <img src={prepaid2} alt="" />
+          <img src="prePaidImg.png" alt="" />
         </div>
         <div class="col2">
           <h3 class="color-grey prePaidh3">WEEKLY</h3>

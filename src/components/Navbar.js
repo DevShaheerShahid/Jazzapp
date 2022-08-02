@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <>
@@ -9,34 +10,37 @@ export default function Navbar() {
             <Link to={"/"}>
               <li class="menuItems">Home</li>
             </Link>
-            <Link to={"prepaid"}>
+            <Link to={"/prepaid"}>
               <li class="menuItems">PREPAID</li>
             </Link>
-            <Link to={"postpaid"}>
+            <Link to={"/postpaid"}>
               <li class="menuItems">POSTPAID</li>
             </Link>
-            <Link to={"devices"}>
+            <Link to={"/devices"}>
               <li class="menuItems">DEVICES</li>
             </Link>
-            <Link to={"mobileapps"}>
+            <Link to={"/mobileapps"}>
               <li class="menuItems">MOBILE APPS</li>
             </Link>
-            <Link to={"product"}>
+            <Link to={"/product"}>
               <li class="menuItems">PRODUCT AND SERVICES</li>
             </Link>
           </ul>
         </div>
         <div class="links">
           <ul>
-            <li class="link" href="">
-              Explore
-            </li>
-            <li class="link" href="">
-              Order a Sim
-            </li>
-            <li class="link" href="">
-              Recharge Now
-            </li>
+            <Link to={"/cart"}>
+              <li class="link">Cart</li>
+            </Link>
+
+            <Link to={"/signin"}>
+              <li class="link">SignIn</li>
+            </Link>
+
+            <Link to={"/signout"}>
+              <li class="link">SignOut</li>
+            </Link>
+
             <li>
               <i class="fa-solid fa-magnifying-glass color-red"></i>
             </li>

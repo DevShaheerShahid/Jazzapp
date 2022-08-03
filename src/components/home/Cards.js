@@ -104,7 +104,7 @@ export const Cards = () => {
   ];
 
   const navigate = useNavigate();
-  const fun = () => {
+  const goToCart = () => {
     navigate("/cart");
   };
 
@@ -133,7 +133,7 @@ export const Cards = () => {
                 <h3>Rs.{Element.price}</h3>
               </div>
               <div>
-                <button class="btn-pkg" onClick={fun}>
+                <button class="btn-pkg" onClick={goToCart}>
                   MORE DETAILS
                 </button>
                 <br />

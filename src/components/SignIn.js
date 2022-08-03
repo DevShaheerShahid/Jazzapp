@@ -24,6 +24,7 @@ export const SignIn = () => {
       <input
         type="text"
         value={userName}
+        autoFocus
         onChange={(e) => setUserName(e.target.value)}
       />
 
